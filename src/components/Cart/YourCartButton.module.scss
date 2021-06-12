@@ -15,12 +15,30 @@
   &:active {
     background-color: #2c0d00;
   }
+
+  @media only screen and (max-width: 600px)  {
+    .text {
+      display: none;
+    }
+
+    padding: 0.75rem 1rem;
+  }
+
+  .text {
+    @media only screen and (max-width: 600px)  {
+      display: none;
+    }
+  }
 }
 
 .icon {
   width: 1.35rem;
   height: 1.35rem;
   margin-right: 0.5rem;
+
+  @media only screen and (max-width: 600px)  {
+    margin-right: 0;
+  }
 }
 
 .badge {
@@ -33,5 +51,10 @@
   &:hover,
   &:active {
     background-color: #92320c;
+  }
+
+  @media only screen and (max-width: 600px)  {
+    margin-left: .5rem;
+    padding: 0.1rem .75rem;
   }
 }
