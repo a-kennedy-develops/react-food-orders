@@ -9,7 +9,7 @@ const Header = (props) => {
     <Fragment>
       <header className={styles.header}>
         <h1>ReactMeals</h1>
-        <YourCartButton/>
+        <YourCartButton onClick={props.onShowCart}/>
       </header>
       <div className={styles['hero-image']}>
         <img src={pizzaHero} alt='Delicious, veggie pizza'/>
